@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="formBox" >
+            <h2> Registration Form </h2>
+            <form >
+                
+                <!-- Name -->
+                <div id="name">
+                    <label for="fname"> <b> First name </b></label>
+                    <input type="text" id="fname" name="fname" placeholder= "First Name" required>
+                    <label for="fname"><b> Last name </b></label>
+                    <input type="text" id="lname" name="lname" placeholder= "Last Name"  required>
+                </div>
+
+                <!-- Gender -->
+                <div id="gender">
+                    <b> Gender </b>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+
+                <!-- Qualification -->
+                <div id="qualification">
+                    <label for="Qualification"> <b >Highest Qualification </b> </label>
+                    <select class="box" id="Education" name="Qualification">
+                    <option value="SSC">SSC</option>
+                    <option value="Inter">Inter</option>
+                    <option value="B Tech">B Tech</option>
+                    <option value="M tech">M tech</option>
+                    <option value="PHD">PHD</option>
+                    </select>
+                </div>
+
+                <!-- Email -->
+                <div id="email">
+                    <label  for="email"> <b>Email </b>  </label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required validate>
+                </div >
+
+                <!-- Mobile number -->
+                <div id="mobile">
+                    <label for="phone"> <b> Enter a phone number : </b></label>
+                    <input type="tel" id="phone" name="phone"
+                    placeholder="Enter mobile number"
+                    pattern="[0-9]{10}" required validate>
+                </div>
+
+                <!-- Text Area -->
+                <div id="addressbar">
+                    <b> Address :</b> <br>
+                    <label for="address"></label> 
+                    <textarea  id="address" name="Address" rows="4" cols="65">
+                    </textarea>
+                </div>
+
+                <!-- Submit && Reset-->
+                <div id="buttons">
+                    <input id="btn" type="submit" value="Submit">
+                    <input id="btn" type="reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
