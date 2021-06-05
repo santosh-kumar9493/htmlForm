@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #2f6fa3;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80%;
+    
+}
+body{
+    background-image: linear-gradient(rgba(14, 13, 13, 0.699),rgba(14, 13, 13, 0.699)), url("bg.jpg");
+    
+}
+#buttons{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+h2{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: black;
+}
+#formBox{
+    background-color: white;
+    padding: 3%;
+    margin-top: 5%;
+    
+}
+input[type=text], input[type=email],input[type=tel],#address,.box {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 19px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    outline: none;
+  }
+
+  #btn{
+   
+        background-color: white;
+        color: #2f6fa3;
+        font-size: 15px;
+        font-weight: 900;
+        padding: 2.5%;
+        border: 1px solid #2f6fa3;
+        cursor: pointer;
+        opacity: 0.9;
+        text-align: center;
+      
+  }
+  #btn:hover{
+    cursor: pointer;
+    box-shadow: 0 3.4px 3.4px 0 #2f6fa3;
+
+    background-color: #2f6fa3;
+    color: white;
+  }
+  
+  input[type=radio]{
+      margin :8px 2% !important;
+  }
+ #qualification{
+    margin: 5px 0;
+ }
